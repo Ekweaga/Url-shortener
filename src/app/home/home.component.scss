@@ -1,0 +1,296 @@
+body, *{
+    margin:0;
+    padding:0;
+}
+.header{
+    display:flex;
+    background-color: white;
+    height: 400px;
+    justify-content: space-around;
+    align-items: center;
+    div{
+        width:450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1{
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    }
+}
+.body{
+    background-color:  rgb(243, 242, 242);
+    height: 350px;
+ 
+   
+    div{
+        width:35%;
+        margin:auto;
+        h2{
+            text-align: center;
+            padding-top: 100px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        p{
+            text-align: center;
+            letter-spacing: 0.1rem;
+            margin:10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+    }
+    
+    .form{
+        height: 50px;
+       width:70%;
+        padding:20px;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+       background-position: center;
+       background-repeat: no-repeat;
+        background-image:linear-gradient(to right, rgba(0,0,0,0.75), rgba(24, 23, 23, 0.5), rgba(15, 15, 15, 0.8)) ,url('/assets/bg-boost-desktop.svg');
+        input{
+            width:300px;
+            padding:15px;
+            border:none;
+            
+        }
+        button{
+            background-color: rgb(6, 109, 95);
+            color:white;
+            width:150px;
+            border:none;
+            padding:10px;
+            cursor:pointer;
+        }
+    }
+    .gg{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .loading{
+            text-align: center;
+            color:green;
+            font-size:18px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif ;
+        }
+        .dd{
+            text-align: center;
+            background-color: white;
+            width:100%;
+            padding:15px;
+          
+            font-size:18px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif ;
+            a{
+                color:rgb(6, 109, 95);
+                text-decoration: none;
+            }
+        }
+    }
+
+}
+
+.services{
+   
+    background-color:  rgb(243, 242, 242);
+   .service{
+       width: 80%;
+       margin:auto;
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       div{
+        margin:25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 250px;
+            background-color: white;
+            h2{
+                text-align: center;
+                margin: 10px;
+                
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            p{
+                text-align: center;
+                margin:15px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size:14px;
+            }
+    }
+   }
+    
+}
+.ok{
+    height:80px;
+    background-image:linear-gradient(to right, rgba(0,0,0,0.75), rgba(24, 23, 23, 0.5), rgba(15, 15, 15, 0.8)) ,url('/assets/bg-boost-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        color:white;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    button{
+        background-color: rgb(6, 109, 95);
+        color:white;
+        width:150px;
+        border:none;
+        padding:10px;
+        cursor:pointer;
+        margin-top:20px;
+        border-radius: 20px;
+    }
+}
+.contact{
+    background-color: black;
+    text-align: center;
+    color:white;
+    padding:10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+@media(max-width:700px){
+    .header{
+        display:block;
+        height:600px;
+        padding:20px;
+        div{
+            padding:15px;
+            width:350px;
+            
+            h1{
+                margin-bottom:15px;
+            }
+
+            p{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+        }
+        svg{
+            width:400px;
+            height:450px;
+        }
+    }
+    .body{
+        background-color:  rgb(243, 242, 242);
+        height:350px;
+        width:100%;
+        div{
+            width:90%;
+            margin:auto;
+            h2{
+                text-align: center;
+                padding-top: 100px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+        }
+        .form{
+            height: 50px;
+           width:90%;
+            padding:20px;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+           background-position: center;
+           background-repeat: no-repeat;
+            background-image:linear-gradient(to right, rgba(0,0,0,0.75), rgba(24, 23, 23, 0.5), rgba(15, 15, 15, 0.8)) ,url('/assets/bg-boost-desktop.svg');
+            input{
+                width:250px;
+                padding:10px;
+                border:none;
+                margin-right: 10px;
+                
+            }
+            button{
+                background-color: rgb(6, 109, 95);
+                color:white;
+                width:150px;
+                border:none;
+                padding:10px;
+                cursor:pointer;
+            }
+        }
+    
+      
+        
+          
+    
+    }
+    .services{
+       
+        background-color: rgb(243, 242, 242);
+      
+        padding:15px;
+        .service{
+             display: block;
+        justify-content: space-around;
+        align-items: center;
+        width:100%;
+
+            div{
+                margin:25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 250px;
+                background-color: white;
+                
+                h2{
+                    text-align: center;
+                    margin: 20px;
+                }
+                p{
+                    text-align: center;
+                    margin:15px;
+                }
+            }
+        }
+       
+    }
+    .ok{
+        height:120px;
+        background-image:linear-gradient(to right, rgba(0,0,0,0.75), rgba(24, 23, 23, 0.5), rgba(15, 15, 15, 0.8)) ,url('/assets/bg-boost-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding:20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2{
+            color:white;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        button{
+            background-color: rgb(6, 109, 95);
+            color:white;
+            width:150px;
+            border:none;
+            padding:10px;
+            cursor:pointer;
+            margin-top:20px;
+            border-radius: 20px;
+        }
+    }
+    
+}
