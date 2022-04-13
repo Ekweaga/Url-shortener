@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgxSpinner, NgxSpinnerService } from 'ngx-spinner';
 
 import { UrlcutService } from '../urlcut.service';
 
@@ -13,17 +14,20 @@ export class HomeComponent implements OnInit {
 loading:boolean = false;
 load:boolean=false
  datas:any;
-  constructor(private urlcut:UrlcutService) { }
+ copy:boolean = false;
+  constructor(private urlcut:UrlcutService, private spinner: NgxSpinnerService) { }
 
   ngOnInit(): void {
    
   }
   put(){
     this.loading = true;
+    this.spinner.show()
+   
     this.urlcut.urlcut(this.input).subscribe((data:any)=>{
       this.loading = false;
       this.load = true;
-     
+     this.spinner.hide()
       this.datas = data.result.full_short_link
       console.log(this.datas)
      
@@ -32,6 +36,12 @@ load:boolean=false
     console.log(this.input)
     this.input = "";
 
+  }
+  copied(){
+    this.copy = true;
+    setTimeout(()=>{
+      this.copy = false
+    }, 1000)
   }
 
 }
